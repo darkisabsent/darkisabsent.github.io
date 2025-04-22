@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selim's website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("lH7QsoTwfuw2oF7dj");
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="start-sound-container">
+        <div id="preloader" class="preloader">
+            <img src="images/loaded.gif">
+            <p class="loading-text">Loading...</p>
+        </div>
+        <div id="start-image-container">
+            <img src="./images/entry-min.jpg" alt="Decorative Image" id="start-image">
+        </div>
+        <button id="start-sound-button">Gateway to the unknown</button>
+    </div>
+    <div>
+        <video id="front-video">
+            <source src="videos/final.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <section class="home" id="home">
+        <header>
+            <a href="#" class="logo">SelimThabet.</a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#diploma">Diplomas</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#skills">Skills</a>
+                <a class="reachme" href="#contact">Reach me</a>
+            </nav>
+        </header>
+        <div class="home-content">
+            <img src="./images/gry.png" alt="Logo" class="mini-logo">
+            <p>
+                Hello there, my name is Selim Thabet. I am a Computer Science Student
+                who is currently pursuing his studies at ISI Ariana. Passionate about
+                programming, I am eager to learn, apply my skills and contribute to
+                this field. I like to expand my skills and creativity.
+            </p>
+        </div>
+        <div class="profile-image">
+            <img src="./images/me2.jpg" alt="Selim Thabet">
+            <div class="secondary-image">
+                <img src="./images/min.png" alt="Logo" class="mini-logo">
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-right">
+            <img src="./images/sort.png" alt="Decorative Image" class="about-image">
+            <p class="quote">
+                "Don't let a sorting hat dictate your fate,<br>
+                Instead embrace the freedom to shape<br>
+                yourself your own destiny."
+            </p>
+        </div>
+        <div class="about-left">
+            <video autoplay muted loop class="about-video">
+                <source src="videos/about.mp4" type="video/mp4">
+            </video>
+            <p class="about-text">
+                Hello, my name is Selim Thabet, a 21-year-old Computer Science student at ISI Ariana.<br>
+                I am passionate about technology and have a diverse range of interests and skills. I love running,
+                playing chess, and playing video games, all while continuously developing my coding abilities
+                in HTML, CSS, and JavaScript.<br>
+                Additionally, I have expertise in video editing and visual effects using tools like Adobe
+                Premiere Pro and After Effects. This portfolio showcases my proficiency in web development
+                and video editing.
+            </p>
+        </div>
+    </section>
+
+    <section class="diploma" id="diploma">
+        <div class="diploma-left">
+            <video autoplay muted loop class="diploma-video">
+                <source src="videos/diploma.mp4" type="video/mp4">
+            </video>
+            <div class="diploma-content">
+                <div class="diploma-item">
+                    <img src="./images/finger.png" alt="Hat" class="diploma-icon">
+                    <h6>Bachelor's degree in Computer Science (In progress).<br>
+                        From september 2023 - present</h6>
+                </div>
+                <div class="diploma-item">
+                    <img src="./images/finger.png" alt="Hat" class="diploma-icon">
+                    <h6>High School Diploma in Mathematics.<br>
+                        From september 2018 - june 2022</h6>
+                </div>
+            </div>
+        </div>
+        <div class="diploma-right">
+            <video autoplay muted loop class="diploma-video-right">
+                <source src="videos/serious.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <i class='bx bxl-html5' style="color: rgb(255, 136, 0);"></i>
+                <h2>Web Development</h2>
+                <p id="title10">
+                    I taught myself the fundamentals of web development from scratch. Starting with HTML, CSS,
+                    and JavaScript, I gained a solid understanding of each tool and learned how to effectively
+                    utilize them to create responsive and interactive websites. By self-teaching, I developed
+                    the skills necessary to handle these tools proficiently and create high-quality web experiences.
+                </p>
+                <a href="#" class="read" onclick="showContent(event, 'content10')">Learn more</a>
+                <div id="content10" class="content-hidden">
+                    <p>This portfolio showcases my skills in web development!</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <i class='bx bxs-videos' style="color: rgb(0, 0, 0);"></i>
+                <h2>Video Editing</h2>
+                <p id="title11">
+                    I have always been fascinated by the captivating visual effects used in movies, which
+                    motivated me to install Adobe After Effects and Premiere Pro. In a short span of time, I
+                    mastered these tools and created multiple mind-blowing projects and videos, mastering
+                    both 2D and 3D animations.
+                </p>
+                <a href="#" class="read" onclick="showContent(event, 'content11')">Learn more</a>
+                <div id="content11" class="content-hidden">
+                    <h3>Click on the instagram icon below to see my artwork</h3>
+                    <a href="https://www.instagram.com/selimthabet_/reels/" target="_blank">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <i class='bx bxs-game' style="color: rgb(0, 225, 255);"></i>
+                <h2>Competitive Programming</h2>
+                <p id="title12">We will get there dw! I'm working on it</p>
+                <a href="#" class="read" onclick="showContent(event, 'content12')">Learn more</a>
+                <div id="content12" class="content-hidden">
+                    <h3>Working on it!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="achievements" id="achievements">
+        <h3 class="section-title">Achievements</h3>
+        <div class="add-image">
+            <input type="file" id="image-upload" name="image-upload" accept="image/png, image/jpeg">
+            <button id="confirm-add-image-button" type="button">Confirm Add Image</button>
+            <button id="upload-image-button" type="button">Upload Image</button>
+        </div>
+        <div class="carousel">
+            <div class="carousel-container" id="carousel-container">
+
+            </div>
+        </div>
+        
+    </section>
+    <section class="skills-section" id="skills">
+        <div class="skills-left">
+            <video autoplay muted loop class="skills-video">
+                <source src="videos/skills.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="skills-right">
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar"><i style="color: orange;" class='bx bxl-html5'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color:rgb(62, 62, 255);" class='bx bxl-css3'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: yellow;" class='bx bxl-javascript'></i>
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: rgb(0, 230, 0);" class='bx bxl-python'></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: rgb(0, 0, 133);" class='bx bxl-c-plus-plus'></i>
+                        <div class="info">
+                            <span>C/C++</span>
+                        </div>
+                        <div class="progress-line c">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container2">
+                <h1 class="heading2">Professional Skills</h1>
+                <div class="Technical-bars2">
+                    <div class="bar2">
+                        <div class="info">
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="progress-line team">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar2">
+                        <div class="info">
+                            <span>Communication</span>
+                        </div>
+                        <div class="progress-line comms">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar2">
+                        <div class="info">
+                            <span>Creativity</span>
+                        </div>
+                        <div class="progress-line create">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar2">
+                        <div class="info">
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="progress-line prob">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+                <h4>-Let's work together-</h4>
+                <p>-Feel free to reach me-</p>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/hackyourmind.0001/" target="_blank"><i
+                            class="bx bxl-facebook-circle"></i></a>
+                    <a href="https://www.instagram.com/selimthabet_/reels/" target="_blank"><i
+                            class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/selim-thabet-228114255/" target="_blank"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/darkisabsent" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject">
+                    <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Developed by Selim Thabet © 2025</p>
+    </footer>
+    <div id="scroll-to-top">
+        <img src="./images/orb.png" alt="Scroll to Top">
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
