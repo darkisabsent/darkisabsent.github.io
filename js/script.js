@@ -57,7 +57,7 @@ startSoundButton.addEventListener('click', () => {
     setTimeout(() => {
         header.style.transition = 'opacity 3s ease-in-out';
         profileImage.style.transition = 'opacity 3s ease-in-out';
-
+        homeContent.style.transition='opacity 3s ease-in-out';
         header.style.opacity = '1';
         homeContent.style.opacity = '1';
         profileImage.style.opacity = '1';
