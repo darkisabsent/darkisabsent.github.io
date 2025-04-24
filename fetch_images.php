@@ -19,11 +19,11 @@ if (!is_readable($directory)) {
 }
 
 
-$files = array_diff(scandir($directory), ['.', '..']); // Exclude '.' and '..'
+$files = array_diff(scandir($directory), ['.', '..']); 
 
 
 $imageUrls = [];
-$allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'JPG', 'PNG' ,' JPEG']; // Allowed file extensions
+$allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'JPG', 'PNG' ,' JPEG']; 
 
 foreach ($files as $file) {
     $filePath = $directory . '/' . $file;
@@ -31,7 +31,7 @@ foreach ($files as $file) {
 
     
     if (is_file($filePath) && in_array(strtolower($fileExtension), $allowedExtensions)) {
-        $imageUrls[] = 'images/achievements/' . $file; // Build relative URLs for images
+        $imageUrls[] = 'images/achievements/' . $file; 
     }
 }
 
