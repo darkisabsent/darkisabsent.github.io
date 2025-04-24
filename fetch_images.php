@@ -31,7 +31,7 @@ foreach ($files as $file) {
 
     
     if (is_file($filePath) && in_array(strtolower($fileExtension), $allowedExtensions)) {
-        $imageUrls[] = 'images/achievements/' . $file; 
+        $imageUrls[] = 'images/achievements/' . $file;  
     }
 }
 
